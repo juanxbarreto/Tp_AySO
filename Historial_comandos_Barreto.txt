@@ -1,0 +1,105 @@
+mkdir clase04
+ls -l
+cd clase04/
+echo linea1
+echo linea1 > archivo1.txt
+ls -l
+cd ..
+pwd
+ssh -keygen -t end25519
+ssh-keygen -t end25519
+ssh-keygen -t ed25519
+cd .ssh
+ls -l
+sudo apt install tree
+tree
+sudo snap install tree
+tree
+tree version
+ls -l
+cd ..
+pwd
+tree
+exit
+pwd
+ls -l
+cd clase04/
+ssh-keygen -t ed25519
+ls -l
+cat \$HOME/.ssh/*.pub
+cd .ssh/
+ls -l
+cat id_ed25519.pub 
+cd ..
+ssh -T git@github.com
+cd
+mkdir -p repogit
+cd repogit/
+ls -l
+git clone git@github.com:juanxbarreto/Tp_AySO.git
+ls -l
+cd Tp_AySO/
+pwd
+ls -ls
+ls -la
+cat /etc/os-release 
+grep -i home_url /etc/os-release 
+grep -i home_url /etc/os-release > datos_url.txt
+ls -l
+cat datos_url.txt 
+git add datos_url.txt 
+git commit -m "Agrego datos_url.txt con HOME_URL del SO"
+git config --global user.name "Juan Cruz"
+git commit -m "Agrego datos_url.txt con HOME_URL del SO"
+git push
+whoami
+whoami > datos_usuario.txt
+cat datos_usuario.txt 
+grep "model name" /proc/cpuinfo 
+grep "model name" /proc/cpuinfo | head -n 1 >> datos_usuario.txt 
+cat datos_usuario.txt 
+git add datos_usuario.txt 
+git commit -m "Agrego datos_usuario.txt con usuario y modelo de cpu"
+git push
+ls -l
+cat << 'EOF' >> README.md 
+Alumno: Juan Cruz Barreto
+Division: 113
+Turno: Mañana
+EOF
+
+cat README.md 
+git add README.md 
+git commmit -m "Agrego README.md con datos del alumno"
+git commit -m "Agrego README.md con datos del alumno"
+git push
+mkdir - p practica/unix
+mkdir -p practica/unix
+mkdir -p practica/bash
+mkdir -p teoria
+cat << 'EOF' >> script.dir.sh 
+# Script para crear la estructura de directorios
+mkdir -p practica/unix
+mkdir -p practica/bash
+mkdir -p teoria
+EOF
+
+chmod +x script.dir.sh 
+ls -l
+rm -rm p
+rm -rf p
+ls -l
+rm -rf practica/
+rm -rf teoria/
+ls -l
+./script.dir.sh 
+ls -R
+ls -l
+cd practica/
+ls -l
+cd ..
+git add script.dir.sh practica/ teoria/
+git commit -m "Agregamos estructura de directorio y script_dir.sh"
+git push
+history -a
+cat ~/.bash_history 
